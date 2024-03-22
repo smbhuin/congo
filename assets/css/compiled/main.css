@@ -1846,10 +1846,6 @@ body:has(#menu-controller:checked) {
   margin-bottom: -0.25rem;
 }
 
-.-ms-5 {
-  margin-inline-start: -1.25rem;
-}
-
 .-mt-3 {
   margin-top: -0.75rem;
 }
@@ -2190,10 +2186,6 @@ body:has(#menu-controller:checked) {
   border-width: 1px;
 }
 
-.border-s {
-  border-inline-start-width: 1px;
-}
-
 .border-t {
   border-top-width: 1px;
 }
@@ -2369,10 +2361,6 @@ body:has(#menu-controller:checked) {
 
 .pe-4 {
   padding-inline-end: 1rem;
-}
-
-.pe-5 {
-  padding-inline-end: 1.25rem;
 }
 
 .ps-2 {
@@ -2682,6 +2670,11 @@ body:has(#menu-controller:checked) {
 .hover\:text-neutral:hover {
   --tw-text-opacity: 1;
   color: rgba(var(--color-neutral), var(--tw-text-opacity));
+}
+
+.hover\:text-primary-400:hover {
+  --tw-text-opacity: 1;
+  color: rgba(var(--color-primary-400), var(--tw-text-opacity));
 }
 
 .hover\:text-primary-500:hover {

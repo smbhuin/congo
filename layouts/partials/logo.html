@@ -24,7 +24,7 @@
 {{- end }}
 {{- if .Site.Params.header.showTitle | default true }}
   <a
-    class="decoration-primary-500 hover:underline hover:decoration-2 hover:underline-offset-2"
+    class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
     rel="me"
     href="{{ "" | relLangURL }}"
     >{{ .Site.Title | markdownify | emojify }}</a

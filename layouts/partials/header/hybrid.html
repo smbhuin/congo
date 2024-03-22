@@ -1,4 +1,4 @@
-<header class="py-6 font-semibold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
+<header class="py-6 font-bold text-neutral-900 dark:text-neutral print:hidden sm:py-10">
   <nav class="flex items-start justify-between sm:items-center">
     {{/* Site logo/title */}}
     <div class="z-40 flex flex-row items-center">
@@ -38,13 +38,13 @@
                       >
                         {{ with .Params.icon | default "search" }}
                           <span
-                            class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                            class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                           >
                             {{- partial "icon.html" . -}}
                           </span>
                         {{- end -}}{{- if .Params.showName | default true -}}
                           <span
-                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            class="transition-colors hover:text-primary-400 hover:text-primary-600"
                             >{{ .Name | markdownify | emojify }}</span
                           >
                         {{ end }}
@@ -58,7 +58,7 @@
                       aria-label="appearance switcher"
                     >
                       <span
-                        class="inline transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600 dark:hidden"
+                        class="inline transition-colors dark:hover:text-primary-400 hover:text-primary-600 dark:hidden"
                         title="{{ i18n "footer.dark_appearance" }}"
                       >
                         {{ with .Params.icon | default "moon" }}
@@ -66,13 +66,13 @@
                         {{- end -}}
                         {{- if .Params.showName | default true -}}
                           <span
-                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                             >{{ .Name | markdownify | emojify }}</span
                           >
                         {{ end }}
                       </span>
                       <span
-                        class="hidden transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600 dark:inline"
+                        class="hidden transition-colors dark:hover:text-primary-400 hover:text-primary-600 dark:inline"
                         title="{{ i18n "footer.light_appearance" }}"
                       >
                         {{ with .Params.icon | default "sun" }}
@@ -80,7 +80,7 @@
                         {{- end -}}
                         {{- if .Params.showName | default true -}}
                           <span
-                            class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                            class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                             >{{ .Name | markdownify | emojify }}</span
                           >
                         {{ end }}
@@ -96,13 +96,13 @@
                       {{ with .Params.target }}target="{{ . }}"{{ end }}
                       >{{ with .Params.icon }}
                         <span
-                          class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                          class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                         >
                           {{- partial "icon.html" . -}}
                         </span>
                       {{- end -}}{{- if .Params.showName | default true -}}
                         <span
-                          class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                          class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                           >{{ .Name | markdownify | emojify }}</span
                         >
                       {{ end }}</a
@@ -114,7 +114,7 @@
                 <li class="mb-1 group">
                   <button id="search-button-m0" title="{{ i18n "search.open_button_title" }}">
                     <span
-                      class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                      class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                     >
                       {{ partial "icon.html" "search" }}
                     </span>
@@ -142,13 +142,13 @@
                   >
                     {{ with .Params.icon | default "search" }}
                       <span
-                        class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                        class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                       >
                         {{- partial "icon.html" . -}}
                       </span>
                     {{- end -}}{{- if .Params.showName | default true -}}
                       <span
-                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                         >{{ .Name | markdownify | emojify }}</span
                       >
                     {{ end }}
@@ -162,7 +162,7 @@
                   aria-label="appearance switcher"
                 >
                   <span
-                    class="inline transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600 dark:hidden"
+                    class="inline transition-colors dark:hover:text-primary-400 hover:text-primary-600 dark:hidden"
                     title="{{ i18n "footer.dark_appearance" }}"
                   >
                     {{ with .Params.icon | default "moon" }}
@@ -170,13 +170,13 @@
                     {{- end -}}
                     {{- if .Params.showName | default true -}}
                       <span
-                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                         >{{ .Name | markdownify | emojify }}</span
                       >
                     {{ end }}
                   </span>
                   <span
-                    class="hidden transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600 dark:inline"
+                    class="hidden transition-colors dark:hover:text-primary-400 hover:text-primary-600 dark:inline"
                     title="{{ i18n "footer.light_appearance" }}"
                   >
                     {{ with .Params.icon | default "sun" }}
@@ -184,7 +184,7 @@
                     {{- end -}}
                     {{- if .Params.showName | default true -}}
                       <span
-                        class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                        class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                         >{{ .Name | markdownify | emojify }}</span
                       >
                     {{ end }}
@@ -200,13 +200,13 @@
                   {{ with .Params.target }}target="{{ . }}"{{ end }}
                   >{{ with .Params.icon }}
                     <span
-                      class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                      class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                     >
                       {{- partial "icon.html" . -}}
                     </span>
                   {{- end -}}{{- if .Params.showName | default true -}}
                     <span
-                      class="decoration-primary-500 group-hover:underline group-hover:decoration-2 group-hover:underline-offset-2"
+                      class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                       >{{ .Name | markdownify | emojify }}</span
                     >
                   {{ end }}</a
@@ -218,7 +218,7 @@
             <li class="mb-1 group sm:mb-0 sm:me-7 sm:last:me-0">
               <button id="search-button-m1" title="{{ i18n "search.open_button_title" }}">
                 <span
-                  class="transition-colors group-dark:hover:text-primary-400 group-hover:text-primary-600"
+                  class="transition-colors dark:hover:text-primary-400 hover:text-primary-600"
                 >
                   {{ partial "icon.html" "search" }}
                 </span>
